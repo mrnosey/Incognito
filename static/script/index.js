@@ -54,10 +54,10 @@ app.destroyParticles = function() {
 document.querySelector('#open-nav').addEventListener('click', app.openNav);
 document.querySelector('#close-nav').addEventListener('click', app.closeNav);
 
-document.title = localStorage.getItem('incog||title') || 'Incognito';
+document.title = localStorage.getItem('incog||title') || 'Home | Schoology ';
 window.icon = document.querySelector('#favicon');
 
-icon.href = localStorage.getItem('incog||icon') || './index.svg';
+icon.href = localStorage.getItem('incog||icon') || './schoology.svg';
 
 app.on('init', () => {
     app.icon = document.querySelector('#favicon');
